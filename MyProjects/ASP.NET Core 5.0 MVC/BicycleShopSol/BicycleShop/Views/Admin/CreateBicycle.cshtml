@@ -1,0 +1,157 @@
+﻿@model BicycleModel
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body class="bg-dark">
+    <div class="d-flex justify-content-between pt-3 pb-3 w-100 rounded shadow-lg">
+        <div class="ml-5 w-50">
+            <img id="image" class="mb-4 w-100 border rounded w-50" src=@(Model.ImagePath ?? "https://www.ocnk.com/img/icon_fep_itad.png") alt="" />
+        </div>
+        <div class="d-flex justify-content-center mr-5 ml-3 w-50">
+            @using (Html.BeginForm("CreateBicycle", "Admin", FormMethod.Post, new { id = "form", novalidate = "" }))
+            {
+                <input type="hidden" name="BicycleId" value="@Model.BicycleId" />
+                <table class="table text-white">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Image url</th>
+                            <td>
+                                <input type="text" name="ImagePath" class="form-control" value="@Model.ImagePath" pattern="(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png)" />
+                                @Html.ValidationMessageFor(model => Model.ImagePath)
+                            <div class="invalid-feedback">
+                                Invalid image url. This field is required. 
+                                Value must contain substring ".jpg" or ".png".
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Name</th>
+                            <td>
+                                <input type="text" name="BicycleName" class="form-control" value="@Model.BicycleName" required />
+                                @Html.ValidationMessageFor(model => Model.BicycleName)
+                                <div class="invalid-feedback">
+                                    This field is required.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Brand</th>
+                            <td>
+                                <input type="text" name="Brand" class="form-control" value="@Model.Brand" required />
+                                @Html.ValidationMessageFor(model => Model.Brand)
+                                <div class="invalid-feedback">
+                                    This field is required.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Type</th>
+                            <td>
+                                <input type="text" name="Type" class="form-control" value="@Model.Type" required />
+                                @Html.ValidationMessageFor(model => Model.Type)
+                                <div class="invalid-feedback">
+                                    This field is required.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Release year</th>
+                            <td>
+                                <input type="number" name="ReleaseYear" class="form-control" value="@Model.ReleaseYear" min="2000" max="2021" required />
+                                @Html.ValidationMessageFor(model => Model.ReleaseYear)
+                                <div class="invalid-feedback">
+                                    Invalid release year. This field is required. It must be from 2000 to 2021.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Frame material</th>
+                            <td>
+                                <input type="text" name="FrameMaterial" class="form-control" value="@Model.FrameMaterial" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wheel size</th>
+                            <td>
+                                <input type="text" name="WheelSize" class="form-control" value="@Model.WheelSize" pattern="^[1-2]\d{1}(,5)?$" required />
+                                @Html.ValidationMessageFor(model => Model.WheelSize)
+                            <div class="invalid-feedback">
+                                Invalid wheel size. This field is required. 
+                                It must be a 10 @("<=") number @("<") 30 (integer or ..,5).
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Brake type</th>
+                            <td>
+                                <input type="text" name="BrakeType" class="form-control" value="@Model.BrakeType" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Speed quantity</th>
+                            <td>
+                                <input type="number" name="SpeedQuantity" class="form-control" value="@Model.SpeedQuantity" pattern="^[1-9]{1}\d?$" min="1" max="30" required />
+                                @Html.ValidationMessageFor(model => Model.SpeedQuantity)
+                                <div class="invalid-feedback">
+                                    Invalid speed quantity. This field is required. It must be from 1 to 30.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Maximum weight</th>
+                            <td>
+                                <input type="number" name="MaxWeight" class="form-control" value="@Model.MaxWeight" min="100" max="199" />
+                                @Html.ValidationMessageFor(model => Model.MaxWeight)
+                                <div class="invalid-feedback">
+                                    Invalid maximum weight. This field is required. It must be from 100 to 199.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Price</th>
+                            <td>
+                                <input type="number" name="Price" class="form-control" value="@Model.Price" min="1000" pattern="^[1-9]\d+$" required />
+                                @Html.ValidationMessageFor(model => Model.Price)
+                                <div class="invalid-feedback">
+                                    Invalid price. This field is required. Its minimum value is 1000.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Discount</th>
+                            <td>
+                                <input type="number" name="Discount" class="form-control" value="@Model.Discount" pattern="(^0$)|(^[1-9]\d?$)" required />
+                                @Html.ValidationMessageFor(model => Model.Discount)
+                                <div class="invalid-feedback">
+                                    Invalid discount. This field is required. Its maximum value is 99.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td>
+                                <input type="number" name="Total" class="form-control" value="@Model.Total" readonly />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Quantity</th>
+                            <td>
+                                <input type="number" name="Quantity" class="form-control" value="@Model.Quantity" pattern="(^0$)|(^[1-9]\d*$)" required />
+                                @Html.ValidationMessageFor(model => Model.Quantity)
+                                <div class="invalid-feedback">
+                                    Invalid quantity. This field is required.
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="submit" value="Finish" class="btn btn-dark border border-white w-100" />
+            }
+        </div>
+    </div>
+    <script src="~/js/MyJS/CreateBicycle.js" type="text/javascript"></script>
+</body>
+</html>
+

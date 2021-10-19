@@ -1,0 +1,436 @@
+{
+  "data": [
+    {
+      "bicycleId": 1,
+      "imagePath": "https://shop.tbb-bike.com/photos/original/23560-subrosa-2021-wings-park-black.jpg"
+    },
+    {
+      "bicycleId": 1,
+      "imagePath": "https://shop.tbb-bike.com/photos/original/23561-subrosa-2021-wings-park-black.jpg"
+    },
+    {
+      "bicycleId": 1,
+      "imagePath": "https://shop.tbb-bike.com/photos/original/23575-subrosa-2021-wings-park-18-black.jpg"
+    },
+    {
+      "bicycleId": 1,
+      "imagePath": "https://cdn.skatepro.com/product/440/subrosa-tiro-18-2021-bmx-freestyle-bike-3a.jpg"
+    },
+    {
+      "bicycleId": 1,
+      "imagePath": "https://shop.tbb-bike.com/photos/original/23557-subrosa-2021-wings-park-black.jpg"
+    },
+    {
+      "bicycleId": 2,
+      "imagePath": "https://cdn.shopify.com/s/files/1/2318/5263/products/BRD14384_CM_06_800x800.jpg"
+    },
+    {
+      "bicycleId": 2,
+      "imagePath": "https://images.internetstores.de/products//1285377/01/88b71d/Orbea_Avant_H30-D_grau.jpg"
+    },
+    {
+      "bicycleId": 2,
+      "imagePath": "https://images.internetstores.de/products//1285377/01/745946/1285377_cd0b14_jpg.jpg"
+    },
+    {
+      "bicycleId": 2,
+      "imagePath": "https://images.internetstores.de/products//1285377/01/3c2afb/Orbea_Avant_H30-D_grau.jpg"
+    },
+    {
+      "bicycleId": 3,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/cf814b301f43def0ed3701e8599053ec.jpg"
+    },
+    {
+      "bicycleId": 3,
+      "imagePath": "https://mzimg.com/big/p1/gci9x3mz2p1.jpg"
+    },
+    {
+      "bicycleId": 3,
+      "imagePath": "https://mzimg.com/big/n1/gci9x1s4vn1.jpg"
+    },
+    {
+      "bicycleId": 3,
+      "imagePath": "https://velotime.com.ua/wa-data/public/shop/products/41/65/6541/images/12594/12594.970.jpg"
+    },
+    {
+      "bicycleId": 4,
+      "imagePath": "https://www.santafixie.com/en/media/catalog/product/f/u/fuji-touring-disc-ltd-antracita-8.jpg"
+    },
+    {
+      "bicycleId": 4,
+      "imagePath": "https://www.santafixie.com/en/media/catalog/product/f/u/fuji-touring-disc-ltd-antracita-5.jpg"
+    },
+    {
+      "bicycleId": 4,
+      "imagePath": "https://velomarket.org.ua/wa-data/public/shop/products/04/70/7004/images/13206/13206.970.jpg"
+    },
+    {
+      "bicycleId": 5,
+      "imagePath": "https://www.haibike.com/cz/-/media/project/accell/shared/brands/haibike/models/ebikes/sduro-trekking-s/sduro-trekking-s-footer.jpg"
+    },
+    {
+      "bicycleId": 5,
+      "imagePath": "https://www.fafit24.de/media/95/60/dc/1614106554/IMG189700_69501.jpg"
+    },
+    {
+      "bicycleId": 5,
+      "imagePath": "https://www.tretwerk.net/out/pictures/master/product/2/MWI4540511944-dcb52168-2ed7-4490-a729-5a16d44597ba_2.jpg"
+    },
+    {
+      "bicycleId": 5,
+      "imagePath": "https://bikepark-dissen.de/wp-content/uploads/2019/02/2-6.jpg"
+    },
+    {
+      "bicycleId": 6,
+      "imagePath": "https://i.ytimg.com/vi/tR6GVd5KRpA/hq720.jpg"
+    },
+    {
+      "bicycleId": 6,
+      "imagePath": "https://velomaximum.com.ua/content/images/9/26-dorozhnik-ruby-ph-2019-33633535628299_small11.jpg"
+    },
+    {
+      "bicycleId": 6,
+      "imagePath": "https://ebike.in.ua/wp-content/uploads/2019/11/IMG_1788-scaled.jpg"
+    },
+    {
+      "bicycleId": 7,
+      "imagePath": "https://giant.vn/wp-content/uploads/2020/07/flourish-10.jpg"
+    },
+    {
+      "bicycleId": 7,
+      "imagePath": "https://giant.vn/wp-content/uploads/2020/07/flourish-8.jpg"
+    },
+    {
+      "bicycleId": 7,
+      "imagePath": "https://giant.vn/wp-content/uploads/2020/07/5.jpg"
+    },
+    {
+      "bicycleId": 7,
+      "imagePath": "https://giant.vn/wp-content/uploads/2020/07/flourish-4-2021-green-3.jpg"
+    },
+    {
+      "bicycleId": 8,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/57a8a460300b78ae4c5c711a6eedf84f.jpg"
+    },
+    {
+      "bicycleId": 8,
+      "imagePath": "https://trinx.com.ua/images/dgu7wb457jp9.jpg"
+    },
+    {
+      "bicycleId": 8,
+      "imagePath": "https://velozavr.com.ua/image/cache/data/velosiped/teskie-podrostkovie/5/-images-tmvfnakczvk6-800x800.jpg"
+    },
+    {
+      "bicycleId": 8,
+      "imagePath": "https://velozavr.com.ua/image/cache/data/velosiped/teskie-podrostkovie/5/-images-3xctftgl5e6x-800x800.jpg"
+    },
+    {
+      "bicycleId": 9,
+      "imagePath": "https://www.plushhillcycles.co.uk/images/Orbea_Keram_3.jpg"
+    },
+    {
+      "bicycleId": 9,
+      "imagePath": "https://www.centrumrowerowe.pl/photo/product/orbea-keram-30-2-145457-f-sk6-w1550-h1080_5.webp"
+    },
+    {
+      "bicycleId": 9,
+      "imagePath": "https://www.centrumrowerowe.pl/photo/product/orbea-keram-30-2-145457-f-sk6-w1550-h1080_6.webp"
+    },
+    {
+      "bicycleId": 9,
+      "imagePath": "https://www.e-bikeshop.co.uk/image/data/21-Orbea/Keram-10/Orbea-Keram-10-eBike-2021-Bosch-Performance-CX-Motor.jpg"
+    },
+    {
+      "bicycleId": 10,
+      "imagePath": "https://www.allterraincycles.co.uk/Images/Original/145036_3.jpg"
+    },
+    {
+      "bicycleId": 10,
+      "imagePath": "https://cdn.shopify.com/s/files/1/1490/5954/products/sub_2021completebikes_salvador_matteraw_headtube_web_1024x1024@2x.jpg"
+    },
+    {
+      "bicycleId": 10,
+      "imagePath": "https://cdn.skatepro.com/product/440/subrosa-salvador-20-2021-bmx-freestyle-bike-6m.jpg"
+    },
+    {
+      "bicycleId": 10,
+      "imagePath": "https://cdn.shopify.com/s/files/1/1220/9692/products/2021-subrosa-salvador-complete-bmx-bike-raw-3_700x700.jpg"
+    },
+    {
+      "bicycleId": 11,
+      "imagePath": "https://interbike.com.ua/wa-data/public/shop/products/75/68/6875/images/16085/16085.970.jpg"
+    },
+    {
+      "bicycleId": 11,
+      "imagePath": "https://interbike.com.ua/wa-data/public/shop/products/75/68/6875/images/16084/16084.970.jpg"
+    },
+    {
+      "bicycleId": 12,
+      "imagePath": "https://www.greenbike.pl/images/Cannondale/Topstone/Cannondale-Topstone-105-2020-czarny-003.jpg"
+    },
+    {
+      "bicycleId": 12,
+      "imagePath": "https://pridebikes.com/assets/cache/images/8/8ddb283048dbe333a283e5d4bf028785.jpg"
+    },
+    {
+      "bicycleId": 12,
+      "imagePath": "https://double-sports.ru/wp-content/uploads/242649e157e511eba43700155d465c05_c2eb6d44fb1211ebab450cc47ab29c0f-scaled.jpg"
+    },
+    {
+      "bicycleId": 13,
+      "imagePath": "https://www.bicyclesonline.com.au/assets/alt_5/4888030.jpg"
+    },
+    {
+      "bicycleId": 13,
+      "imagePath": "https://cdn.shopify.com/s/files/1/0014/4385/6450/products/4888030_6f912f07-1b37-4c49-b831-7028d253a0e1.jpg"
+    },
+    {
+      "bicycleId": 13,
+      "imagePath": "https://double-sports.ru/wp-content/uploads/242649e157e511eba43700155d465c05_c2eb6d44fb1211ebab450cc47ab29c0f-scaled.jpg"
+    },
+    {
+      "bicycleId": 13,
+      "imagePath": "https://www.veloplaneta.by/img/new_Tech-3-Wildcat.jpg"
+    },
+    {
+      "bicycleId": 14,
+      "imagePath": "https://meridabikes.in.ua/wp-content/uploads/2020/08/cb06ebd6d1be8a002e6572fcd7429b1e-1024x634.jpg"
+    },
+    {
+      "bicycleId": 14,
+      "imagePath": "https://meridabikes.in.ua/wp-content/uploads/2020/08/acc2cbdabf99521a2468c0ba5db2a66c-1024x634.jpg"
+    },
+    {
+      "bicycleId": 14,
+      "imagePath": "https://meridabikes.in.ua/wp-content/uploads/2020/08/d90cc7b13f49d9d233053377d0769a81-1024x634.jpg"
+    },
+    {
+      "bicycleId": 14,
+      "imagePath": "https://meridabikes.in.ua/wp-content/uploads/2020/07/8c872d90af2447ebb32fb4984ea3a177-1024x634.jpg"
+    },
+    {
+      "bicycleId": 14,
+      "imagePath": "https://www.veloonline.com/images/catalog/pic/big/big_6-merida-crossway-l-100-666_44865_pic.jpg"
+    },
+    {
+      "bicycleId": 15,
+      "imagePath": "https://images.internetstores.de/products//1272312/02/96273b/Orbea_Vector_30_urban_green.jpg"
+    },
+    {
+      "bicycleId": 15,
+      "imagePath": "https://images.internetstores.de/products//1272312/01/e1164d/Orbea_Vector_30_urban_green.jpg"
+    },
+    {
+      "bicycleId": 15,
+      "imagePath": "https://images.internetstores.de/products//1272312/01/88c00e/Orbea_Vector_30_urban_green.jpg"
+    },
+    {
+      "bicycleId": 15,
+      "imagePath": "https://unhyped.de/wp-content/uploads/2018/09/Orbea-Gain-Urban-E-Bike-2019-Green.jpg"
+    },
+    {
+      "bicycleId": 16,
+      "imagePath": "https://i.pinimg.com/originals/20/6d/08/206d086004d88cc68fc0c607813f0eec.jpg"
+    },
+    {
+      "bicycleId": 16,
+      "imagePath": "https://www.thebikelist.co.uk/images/models/Orbea/2014/carpe-electric/04carpe-detail-05.jpg"
+    },
+    {
+      "bicycleId": 16,
+      "imagePath": "https://www.thebikelist.co.uk/images/models/Orbea/2014/carpe-50/03carpe-detail-03.jpg"
+    },
+    {
+      "bicycleId": 16,
+      "imagePath": "https://www.thebikelist.co.uk/images/models/Orbea/2014/carpe-40/01carpe-detail-04.jpg"
+    },
+    {
+      "bicycleId": 17,
+      "imagePath": "https://images.internetstores.de/products//1272381/01/f58464/Orbea_MX_40_black_grey.jpg"
+    },
+    {
+      "bicycleId": 17,
+      "imagePath": "https://images.internetstores.de/products//1272381/02/03f245/Orbea_MX_40_black_grey.jpg"
+    },
+    {
+      "bicycleId": 17,
+      "imagePath": "https://cdn.media.amplience.net/i/washford/434790d"
+    },
+    {
+      "bicycleId": 18,
+      "imagePath": "https://meridabikes.in.ua/wp-content/uploads/2020/08/4aebe6c70a2f5298a656b8e81b593cb2-1024x634.jpg"
+    },
+    {
+      "bicycleId": 18,
+      "imagePath": "https://velopuls.ua/wa-data/public/shop/products/55/82/99998255/images/24622/24622.630.jpg"
+    },
+    {
+      "bicycleId": 18,
+      "imagePath": "https://velopuls.ua/wa-data/public/shop/products/17/92/99999217/images/25061/25061.630.jpg"
+    },
+    {
+      "bicycleId": 19,
+      "imagePath": "https://cycles.com.ua/image/cache/catalog/product/13/95/product_image_5595_47393-1000x667.jpg"
+    },
+    {
+      "bicycleId": 19,
+      "imagePath": "https://dnipro.bike/images/detailed/44/C21_C14401M_CAAD_Optimo_4_SLV_D7-2.webp"
+    },
+    {
+      "bicycleId": 19,
+      "imagePath": "https://goldenbike.com.ua/uploads/shop/products/additional/acd34fc33c0bdce6d67f02670bb55f5b.jpg"
+    },
+    {
+      "bicycleId": 19,
+      "imagePath": "https://cycles.com.ua/image/cache/catalog/product/13/95/product_image_5595_47394-1000x667.jpg"
+    },
+    {
+      "bicycleId": 20,
+      "imagePath": "https://kruti.com.ua/files/catalog/rm_rus/379809_image.jpg"
+    },
+    {
+      "bicycleId": 20,
+      "imagePath": "https://kruti.com.ua/files/catalog/rm_rus/379798_image.jpg"
+    },
+    {
+      "bicycleId": 20,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/b45a6aef0daddd9a414c8716510fe913.jpg"
+    },
+    {
+      "bicycleId": 20,
+      "imagePath": "https://www.cannondale.com/-/media/images/my20/bikes/mountain/trail/trail/regraded-tech/c20_trail-c2_boost_1729.jpg"
+    },
+    {
+      "bicycleId": 21,
+      "imagePath": "https://cdn.bike24.net/i/mb/18/1b/ef/scalpel-carbon-3-candy-red-02-835935.jpg"
+    },
+    {
+      "bicycleId": 21,
+      "imagePath": "https://elastomania.com.ua/image/cache/catalog/Cann2021/s1600_photo_592183-2600x1500w.jpg"
+    },
+    {
+      "bicycleId": 21,
+      "imagePath": "https://cycles.com.ua/image/cache/catalog/product/13/56/product_image_3856_31668-1000x667.jpg"
+    },
+    {
+      "bicycleId": 21,
+      "imagePath": "https://cycles.com.ua/image/cache/catalog/product/13/56/product_image_3856_31678-1000x667.jpg"
+    },
+    {
+      "bicycleId": 21,
+      "imagePath": "https://cdn-ctstaging.pressidium.com/wp-content/uploads/2020/12/2021-Cannondale-Scalpel-Scalpel-SE-release-cyclingtips-14.jpg"
+    },
+    {
+      "bicycleId": 22,
+      "imagePath": "https://samokat.ua/images/products/Stolen_Bmx_bike_Sinner_SKD-99-31_02_24w.jpg"
+    },
+    {
+      "bicycleId": 22,
+      "imagePath": "https://cdn.skatepro.com/product/440/stolen-sinner-fc-xlt-20-2021-bmx-freestyle-bike-4y.jpg"
+    },
+    {
+      "bicycleId": 22,
+      "imagePath": "https://cdn.skatepro.com/product/440/stolen-sinner-fc-xlt-20-2021-bmx-freestyle-bike-3d.jpg"
+    },
+    {
+      "bicycleId": 23,
+      "imagePath": "https://fatbmx.com/uploads4/2014Q3/wk38/2015-haro-midway-black-detail-1.jpg"
+    },
+    {
+      "bicycleId": 23,
+      "imagePath": "https://d10hipj87uuj3k.cloudfront.net/2016bmxdetails1200jpg/2016-Haro-Midway-Black-Detail-8.jpg"
+    },
+    {
+      "bicycleId": 23,
+      "imagePath": "https://d10hipj87uuj3k.cloudfront.net/2015bmxdetails1200jpg/2015-Haro-Midway-Black-detail-4.jpg"
+    },
+    {
+      "bicycleId": 24,
+      "imagePath": "https://m.media-amazon.com/images/I/51I4PSAeIRL._AC_.jpg"
+    },
+    {
+      "bicycleId": 24,
+      "imagePath": "https://m.media-amazon.com/images/I/51wwQWMBhWL._AC_.jpg"
+    },
+    {
+      "bicycleId": 25,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/9a499a3b15a2001c7280d4a712a16729.jpg"
+    },
+    {
+      "bicycleId": 25,
+      "imagePath": "https://lisoped.ua/storage/shop_images/CONTENT/Cannondale/2021/TOPSTONE/TOPSTONE%203%2028/C21_C15871M_Topstone_3_GRA_D1_W.jpg"
+    },
+    {
+      "bicycleId": 25,
+      "imagePath": "https://kruti.com.ua/files/catalog/rm_rus/379715_image.jpg"
+    },
+    {
+      "bicycleId": 25,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/d68ea361e10e8317983d897c974d59ce.jpg"
+    },
+    {
+      "bicycleId": 26,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/4da7bdf22e0bf1e589fbebbe748921f2.2_--1.jpg"
+    },
+    {
+      "bicycleId": 26,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/4da7bdf22e0bf1e589fbebbe748921f2.2_--2.jpg"
+    },
+    {
+      "bicycleId": 27,
+      "imagePath": "https://bikestory.com.ua/wp-content/uploads/2020/10/velosiped-detskij-royalbaby-chipmunk-explorer-20-sinij-9.jpg"
+    },
+    {
+      "bicycleId": 27,
+      "imagePath": "https://interbike.com.ua/wa-data/public/shop/products/27/70/7027/images/16797/16797.970.jpg"
+    },
+    {
+      "bicycleId": 27,
+      "imagePath": "https://futenbike.com.ua/wp-content/uploads/2021/03/velosiped-chipmunk-explorer-20-rear-hub-1.jpg"
+    },
+    {
+      "bicycleId": 28,
+      "imagePath": "https://images.internetstores.de/products//878970/02/9f1256/Marin_Muirwood_29__schwarz[640x480].jpg"
+    },
+    {
+      "bicycleId": 28,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/802e1c04e217d8f005f63e57b1a945c3.jpg"
+    },
+    {
+      "bicycleId": 28,
+      "imagePath": "https://cdn.shopify.com/s/files/1/2078/0705/products/muirwoods-3_1572x.jpg"
+    },
+    {
+      "bicycleId": 29,
+      "imagePath": "https://www.veloonline.com/images/catalog/pic/big/big_1-giant-talon-4-103_44727_pic.jpg"
+    },
+    {
+      "bicycleId": 29,
+      "imagePath": "http://upload.webbnc.vn/upload/web/29/2908/product/2020/09/07/08/48/15995117263.jpg"
+    },
+    {
+      "bicycleId": 29,
+      "imagePath": "http://upload.webbnc.vn/upload/web/29/2908/product/2020/09/07/08/48/159951172679.jpg"
+    },
+    {
+      "bicycleId": 30,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/3f15210ccd0e71bbcdf3708445f0c739.png"
+    },
+    {
+      "bicycleId": 30,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/e0814a769e87c5c91845782961bb614f.png"
+    },
+    {
+      "bicycleId": 30,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/49676a74cd2dd67bc0e7abf2a8e826de.png"
+    },
+    {
+      "bicycleId": 30,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/f9a999813c19690939c6114b1fa231f2.png"
+    },
+    {
+      "bicycleId": 30,
+      "imagePath": "https://velogo.com.ua/uploads/shop/products/additional/3952500b9b7790731ffaca3e74363515.png"
+    }
+  ]
+}

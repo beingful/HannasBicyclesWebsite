@@ -1,0 +1,57 @@
+﻿<Window x:Class="Chat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chat"
+        mc:Ignorable="d"
+        Title="Dialogue" Height="450" Width="800" Loaded="ChatLoaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Сolor scheme:" FontSize="15" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+
+        <ComboBox x:Name="colorSchemeCmbBox" Grid.Column="1" Height="30" Width="225" HorizontalAlignment="Left" SelectionChanged="ColorSchemeChanged">
+            <ComboBoxItem Content="AntiqueWhite/Red"/>
+            <ComboBoxItem Content="DarkSalmon/White"/>
+            <ComboBoxItem Content="DarkCyan/White"/>
+            <ComboBoxItem Content="DarkRed/White"/>
+            <ComboBoxItem Content="DarkSeaGreen/White"/>
+            <ComboBoxItem Content="FloralWhite/Brown"/>
+            <ComboBoxItem Content="Lavender/Black"/>
+        </ComboBox>
+
+        <Label Content="Font style:  " Grid.Column="2" FontSize="15" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+
+        <ComboBox x:Name="fontStyleCmbBox" Grid.Column="3" Height="30" Width="225" HorizontalAlignment="Left" SelectionChanged="FontStyleChanged">
+            <ComboBoxItem Content="Times New Roman"/>
+            <ComboBoxItem Content="Times New Roman Italic"/>
+            <ComboBoxItem Content="Times New Roman Bold"/>
+            <ComboBoxItem Content="Comic Sans MS"/>
+            <ComboBoxItem Content="Verdana"/>
+            <ComboBoxItem Content="Pericles Light"/>
+            <ComboBoxItem Content="Sylfaen"/>
+        </ComboBox>
+
+        <!--<StackPanel Grid.Row="1" Grid.ColumnSpan="4">
+            <ListView x:Name="chatListView" FontSize="15"/>
+        </StackPanel>-->
+
+        <ListBox x:Name="chatListView" Grid.Row="1" Grid.ColumnSpan="4" FontSize="15" Background="Lavender"/>
+
+        <TextBox x:Name="chatTxtBox" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3"/>
+
+        <Button x:Name="sendBtn" Content="Send" Grid.Row="2" Background="White" FontSize="15" Click="BttnSendClick"/>
+    </Grid>
+</Window>

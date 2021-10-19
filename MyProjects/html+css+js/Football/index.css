@@ -1,0 +1,15 @@
+#football {
+    background-size: 100% 100%;
+    height: 100vh;
+    background-image: url('https://image.freepik.com/free-photo/top-view-of-soccer-football-field-green-grass_34645-233.jpg');
+}
+
+#football .pass {
+    transition: 1s;
+    position: absolute;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/1200px-Soccerball.svg.png');
+}
+

@@ -1,0 +1,70 @@
+﻿@model List<BicycleShopDB.Tables.Bicycle>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="~/css/MyCSS/Panel.css" rel="stylesheet" />
+    <link href="~/css/MyCSS/Delete.css" rel="stylesheet" />
+</head>
+<body class="bg-dark">
+    <div>
+        <div>
+            <a class="d-flex justify-content-center text-white mb-3" asp-action="CreateBicycle" asp-controller="Admin">
+                <img id="create-img" src="https://icons-for-free.com/iconfiles/png/512/append+circle+create+green+new+plus+icon-1320196710849480257.png" alt="" />
+                <h3 class="ml-5 mt-1">Add new bicycle</h3>
+            </a>
+        </div>
+        <table id="panel-tabel" class="table text-white">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Brand</th>
+                    <th>Type</th>
+                    <th>Release year</th>
+                    <th>Frame material</th>
+                    <th>Wheel size</th>
+                    <th>Brake type</th>
+                    <th>Speed quantity</th>
+                    <th>Maximum weight</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Quantity</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var bicycle in Model)
+                {
+                <tr>
+                    <td>@bicycle.BicycleName</td>
+                    <td>@bicycle.Brand</td>
+                    <td>@bicycle.Type</td>
+                    <td>@bicycle.ReleaseYear</td>
+                    <td>@bicycle.FrameMaterial</td>
+                    <td>@bicycle.WheelSize</td>
+                    <td>@bicycle.BrakeType</td>
+                    <td>@bicycle.SpeedQuantity</td>
+                    <td>@bicycle.MaxWeight</td>
+                    <td>@bicycle.Price</td>
+                    <td>@bicycle.Discount%</td>
+                    <td>@bicycle.Quantity</td>
+                    <td>
+                        <form asp-action="CreateBicycle" asp-controller="Admin" method="get">
+                            <input type="hidden" value="@bicycle.BicycleId" name="id" />
+                            <input id="update" class="btn icon-crud" type="submit" value="" />
+                        </form>
+                    </td>
+                    <td>
+                        <form asp-action="DeleteBicycle" asp-controller="Admin" method="post">
+                            <input type="hidden" value="@bicycle.BicycleId" name="id" />
+                            <input id="delete" class="btn icon-crud" type="submit" value="" />
+                        </form>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

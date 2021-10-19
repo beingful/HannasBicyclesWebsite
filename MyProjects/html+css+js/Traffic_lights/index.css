@@ -1,0 +1,56 @@
+body {
+    background-color: bisque;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -200px;
+}
+
+#div1 #div2 {
+    background-color: bisque;
+}
+
+#light {
+    height: 100px;
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 17px;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#next {
+    width: 80px;
+    margin-left: 10px;
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    border-top: 0;
+    border-left: 0;
+    border-radius: 10px;
+    background-color: gainsboro;
+    font-size: large;
+}
+

@@ -1,0 +1,271 @@
+﻿@model IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+    string disabled = "";
+    string sortCategoryName;
+    string isChecked = "checked";
+    string price;
+    string priceWithDisc;
+}
+
+<!DOCTYPE HTML>
+    <html>
+    <head>
+        <link href="~/css/MyCSS/Index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-3 border-right">
+                @foreach (var selection in Model.Filter.FilterCategories)
+                {
+                    <div class="mb-1">
+                        <button class="btn btn-lg btn-dark w-100 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample@(selection.Name)" aria-expanded="false" aria-controls="collapseExample">
+                            @selection.Name
+                        </button>
+                        <div class="collapse w-100" id="collapseExample@(selection.Name)">
+                            @foreach (var category in selection.Selections)
+                            {
+                                if (category.IsChecked == true)
+                                {
+                                    isChecked = "checked";
+                                }
+                                else
+                                {
+                                    isChecked = "";
+                                }
+                                <div class="dropdown-item bg-dark text-white border-bottom rounded">
+                                    <div class="custom-control custom-checkbox">
+                                        <input id="@category.Name.ToLower().Replace(' ', '-').Replace(",", "")" type="checkbox" class="custom-control-input sort-ch-bx" data-type="@selection.Name.ToLower()" value=true @isChecked>
+                                        <input type="hidden" value=false />
+                                        <label class="custom-control-label" for="@category.Name.ToLower().Replace(' ', '-').Replace(",", "")">@category.Name</label>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+
+                @(isChecked = "")
+
+                @if (Model.Filter.Discount == true)
+                {
+                isChecked = "checked";
+                }
+                <div class="custom-checkbox mt-4 mb-5">
+                    <div class="text-center bg-dark text-white rounded">
+                        <input id="discount" type="checkbox" class="custom-control-input sort-ch-bx" data-type="discount" value=true @isChecked>
+                        <input type="hidden" value=false />
+                        <label class="custom-control-label" for="discount">Discount</label>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between w-100">
+                    <div>
+                        <input id="price-from" type="number" value="@Model.Filter.PriceFrom" min="0" style="width:74px" readonly />
+                        <span style="width:15px">₴</span>
+                    </div>
+                    <div class="mr-1">-</div>
+                    <div>
+                        <input id="price-to" type="number" value="@Model.Filter.PriceTo" min="0" style="width:74px" readonly />
+                        <span style="width:15px">₴</span>
+                    </div>
+                    <button id="price" class="btn-sm btn-dark rounded ml-1 w-25">Ok</button>
+                </div>
+
+                <div class="min-max-slider w-100" data-legendnum="2" style="height:20px">
+                    <span class="value lower invisible"></span>
+                    <span class="value upper invisible"></span>
+                    <input class="min" type="range" step="1" min="0" max="@ViewBag.HighestPrice" />
+                    <input class="max" type="range" step="1" min="0" max="@ViewBag.HighestPrice" />
+                </div>
+
+                <a class="btn btn-outline-dark rounded-pill shadow-lg w-100 mt-2" href="/Home/Index">
+                    All goods
+                </a>
+            </div>
+
+            <div class="col-9">
+                @if (ViewBag.Success != null)
+                {
+                    <div id="my-alert" class="alert alert-primary alert-dismissible fade show" role="alert">
+                        <h4 class="alert-heading">@ViewBag.Success</h4>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                }
+                <div class="d-flex justify-content-between mb-1">
+                    <span class="text-secondary">Products found: @Model.TotalBicycleQuantity</span>
+                    <div class="d-flex justify-content-center">
+                        <select id="sortCategory" class="form-select rounded bg-dark text-white mr-1 sorting">
+                            @{
+                                int ind = 0;
+
+                                if (Model.Sorting.SortTypeIndex % 2 is 1)
+                                {
+                                    ind++;
+                                }
+
+                                while (ind < Model.Sorting.SortTypesQuantity)
+                                {
+                                    sortCategoryName = @Model.Sorting.GetSortCategoryName(ind);
+
+                                    if (ind == Model.Sorting.SortTypeIndex)
+                                    {
+                                        <option selected value="@sortCategoryName.ToLower()">By @sortCategoryName.ToLower()</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@sortCategoryName.ToLower()">By @sortCategoryName.ToLower()</option>
+                                    }
+
+                                    ind += 2;
+                                }
+                            }
+                        </select>
+                        <select id="sortDirection" class="form-select rounded bg-dark text-white sorting">
+                            @if (Model.Sorting.SortTypeIndex % 2 is 0)
+                            {
+                                <option value="asc" selected>Ascending</option>
+                                <option value="desc">Descending</option>
+                            }
+                            else
+                            {
+                                <option value="asc">Ascending</option>
+                                <option value="desc" selected>Descending</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-sm-between">
+                    @foreach (var bicycle in Model.Bicycles)
+                    {
+                        price = Convert.ToString(bicycle.Price);
+                        <div class="card rounded" style="width:270px">
+                            <a class="h-50" href="~/Home/Details/@bicycle.BicycleId">
+                                <div class="embed-responsive embed-responsive-16by9 h-100">
+                                    <img class="card-img-top embed-responsive-item" src=@bicycle.ImagePath alt="">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <input name="maxQuantity" type="hidden" value="@bicycle.Quantity" />
+                                <a class="text-dark" href="~/Home/Details/@bicycle.BicycleId">
+                                    <span class="card-title bic-name">@bicycle.BicycleName</span>
+                                </a>
+                                @if (bicycle.Discount == 0)
+                                {
+                                    <p class="card-text">
+                                        @(price.Substring(0, price.Length - 3)) @(price.Substring(price.Length - 3))
+                                        <small>UAH</small>
+                                    </p>
+                                }
+                                else
+                                {
+                                    priceWithDisc = bicycle.Total.ToString();
+                                    <p class="card-text">
+                                        <span class="text-secondary">
+                                            <s>
+                                                <small>
+                                                    @(price.Substring(0, price.Length - 3)) @(price.Substring(price.Length - 3))
+                                                </small>
+                                            </s>
+                                        </span>
+                                        <span class="text-danger">
+                                            <strong>
+                                                @(priceWithDisc.Substring(0, price.Length - 3))
+                                                @(priceWithDisc.Substring(price.Length - 3))
+                                            </strong>
+                                            <small>UAH</small>
+                                        </span>
+                                    </p>
+                                }
+
+                                <div class="d-flex justify-content-center">
+                                    <input class="minus btn disabled" type="button" value="-">
+                                    <input name="quantity" value="1" type="text" class="ml-1 mr-1 text-center" size="4" readonly>
+                                    <input class="plus btn" type="button" value="+">
+                                </div>
+                                @using (Html.BeginForm("AddToCart", "Cart"))
+                                {
+                                    <input type="hidden" name="id" value="@bicycle.BicycleId" />
+                                    <input type="hidden" name="returnUrl" value="@(Context.Request.Path + Context.Request.QueryString)" />
+                                    <input type="hidden" name="quantity" value="1" />
+                                    <input type="submit" class="btn btn-dark w-100 mt-3" value="Buy" />
+                                }
+                                @using (Html.BeginForm("AddToCartAndRedirect", "Cart"))
+                                {
+                                    <input type="hidden" name="id" value="@bicycle.BicycleId" />
+                                    <input type="hidden" name="quantity" value="1" />
+                                    <input type="hidden" name="returnUrl" value="@(Context.Request.Path + Context.Request.QueryString)" />
+                                    <input type="submit" class="btn btn-dark w-100 mt-3" value="Add to cart" />
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <nav aria-label="Page navigation example" class="mt-4">
+                    <input id="current-page" type="hidden" value="@Model.Page.Number" />
+
+                    <ul class="pagination justify-content-center">
+
+                        @if (Model.Page.TotalQuantity > 1)
+                        {
+                            <li class="page-item">
+                                @if (!Model.Page.HasPreviousPage)
+                                {
+                                    <button id="prev-page" class="btn btn-outline-dark disabled page-btn none-clickable" value="@(Model.Page.Number - 1)" data-type="id" tabindex="-1">
+                                        Prev
+                                    </button>
+                                }
+                                else
+                                {
+                                    <button id="prev-page" class="btn btn-outline-dark page-btn" value="@(Model.Page.Number - 1)" data-type="id" tabindex="-1">
+                                        Prev
+                                    </button>
+                                }
+                            </li>
+
+                             @for (int i = 1; i <= Model.Page.TotalQuantity; i++)
+                             {
+                                if (i == Model.Page.Number)
+                                {
+                                    <li class="page-item ml-1">
+                                        <button id="page-@i" class="btn btn-dark page-btn" value="@i" data-type="id">
+                                            @i
+                                        </button>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="page-item ml-1">
+                                        <button id="page-@i" class="btn btn-outline-dark page-btn" value="@i" data-type="id">
+                                            @i
+                                        </button>
+                                    </li>
+                                }
+                             }
+
+                             <li class="page-item @disabled page-btn">
+                                @if (!Model.Page.HasNextPage)
+                                {
+                                    <button id="next-page" class="btn btn-outline-dark ml-1 disabled page none-clickable" value="@(Model.Page.Number + 1)" data-type="id" tabindex="-1">
+                                        Next
+                                    </button>
+                                }
+                                else
+                                {
+                                    <button id="next-page" class="btn btn-outline-dark ml-1 page" value="@(Model.Page.Number + 1)" data-type="id" tabindex="-1">
+                                        Next
+                                    </button>
+                                }
+                             </li>
+                         }
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </body>
+</html>
+

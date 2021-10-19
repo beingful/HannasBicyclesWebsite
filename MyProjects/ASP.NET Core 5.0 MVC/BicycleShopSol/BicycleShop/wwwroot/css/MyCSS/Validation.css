@@ -1,0 +1,11 @@
+﻿.validation-summary-errors {
+    color: red;
+    font-size: 11px;
+    border: 1px double red;
+    border-radius: 5px;
+}
+
+.field-validation-error {
+    color: red;
+    font-size: 11px;
+}

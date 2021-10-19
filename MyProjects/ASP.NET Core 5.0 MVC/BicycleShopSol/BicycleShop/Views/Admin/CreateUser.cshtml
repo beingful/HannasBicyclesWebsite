@@ -1,0 +1,77 @@
+﻿@model UserModel
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="~/css/MyCSS/ForgotPassword.css" rel="stylesheet" />
+</head>
+<body class="bg-dark">
+    <div class="container bootstrap snippets bootdey d-flex justify-content-center w-100 col-md-6 col-md-offset-2">
+        <div class="panel-body row">
+            <div class="col-xs-6 col-sm-6 col-md-6 separator social-login-box">
+                <br>
+                <img alt="" class="w-100" src="https://image.flaticon.com/icons/png/512/166/166256.png">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 login-box">
+                @using (Html.BeginForm("CreateUser", "Admin", FormMethod.Post, new { id = "form", novalidate = "" }))
+                {
+                    @if (!string.IsNullOrEmpty(Model.Id))
+                    {
+                        <input type="hidden" name="Id" value="@Model.Id" />
+                        <input type="hidden" name="Email" value="@Model.Email" />
+                    }
+                    else
+                    {
+                        <div class="mb-3">
+                            <label class="form-label text-white" for="email">Email-adress</label>
+                            <input type="text" id="email" name="Email" class="form-control mb-1" value="@Model.Email" pattern="[a-zA-Z0-9._%+-]+@("@")[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                            @Html.ValidationMessageFor(email => Model.Email)
+                            <div class="invalid-feedback">
+                                Invalid e-mail adress. Value must contain "@("@")".
+                            </div>
+                        </div>
+                    }
+                    <div class="mb-3">
+                        <label class="form-label text-white" for="password">New password</label>
+                        <input type="text" id="password" name="NewPassword" class="form-control mb-1" value="@Model.NewPassword" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9])\S{8,16}$">
+                        @Html.ValidationMessageFor(email => Model.NewPassword)
+                        <div class="invalid-feedback">
+                            Invalid password.
+                        </div>
+                        <div>
+                            <small class="text-secondary mt-1">
+                                Password must consist of:<br />
+                                1. Lowercase letter(s) [a-z]<br />
+                                2. Uppercase letter(s) [A-Z]<br />
+                                3. Special symbol(s) (? = . * e.t.c)<br />
+                                4. Digit(s) [0-9]<br />
+                                5. At least 8 symbols and no longer than 16
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label text-white" for="role">Role</label>
+                        <input type="text" id="role" name="Role" class="form-control" value="@Model.Role" required />
+                        @Html.ValidationMessageFor(model => Model.Role)
+                        <div class="invalid-feedback">
+                            This field is required.
+                        </div>
+                    </div>
+
+                    @Html.ValidationSummary(true)
+
+                    @*<div class="d-flex justify-content-center mt-3">
+                        <input class="btn btn-info border border-white w-50" type="submit" value="Finish">
+                    </div>*@
+
+                    <button class="btn btn-info border border-white w-50 mt-3">
+                        Finish
+                    </button>
+                }
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

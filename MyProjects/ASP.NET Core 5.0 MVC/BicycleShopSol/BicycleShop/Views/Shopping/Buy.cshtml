@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body class="bg-dark">
+    @if (ViewBag.Success != null)
+    {
+        <div id="my-alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+            <h4 class="alert-heading">@ViewBag.Success</h4>
+            <hr>
+            <p class="mb-0">Make shure the entered e-mail is correct.</p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+<div class="d-flex justify-content-center pt-3 pb-3 w-100 rounded shadow-lg">
+    <div>
+        <img class="mb-4 w-100" src="https://akhawat.islamway.net/forum/uploads/monthly_07_2011/post-362660-1310320744_thumb.png" alt="" />
+    </div>
+    <div class="d-flex justify-content-center col-7 mt-5 mr-5">
+        @using (Html.BeginForm("Buy", "Shopping", FormMethod.Post, new { @class = "w-75", id = "form", novalidate = "" }))
+        {
+            <div>
+                <label class="form-label text-white" for="name">Name</label>
+                <input type="text" id="name" name="Name" class="form-control" placeholder="John" value="" required pattern="(^[A-Z]{1}[a-z]* {1})*[A-Z]{1}[a-z]*$" />
+                <div class="invalid-feedback">
+                    This field is required. Make shure the entered name consists of letters only.
+                </div>
+            </div>
+
+            <div>
+                <label class="form-label text-white" for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="Lastname" class="form-control" placeholder="Smith" value="" required pattern="^[A-Z]{1}[a-z]*$" />
+                <div class="invalid-feedback">
+                    This field is required. Make shure the entered last name consists of letters only.
+                </div>
+            </div>
+
+            <div>
+                <label class="form-label text-white" for="email">E-mail adress</label>
+                <input type="text" id="email" name="Email" class="form-control" placeholder="my_email@gmail.com" value="@User.Identity.Name" pattern="[a-zA-Z0-9._%+-]+@("@")[a-z0-9.-]+\.[a-z]{2,3}$" readonly />
+            </div>
+            <div class="mt-5">
+                <button class="btn btn-dark border-white w-50" type="submit">Buy</button>
+            </div>
+        }
+    </div>
+</div>
+</body>
+</html>

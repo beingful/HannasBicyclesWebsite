@@ -1,0 +1,65 @@
+﻿@model SignupViewModel
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="~/css/MyCSS/Signup.css" rel="stylesheet" />
+</head>
+<body class="bg-dark">
+    @if (ViewBag.Verification != null)
+    {
+        <div id="my-alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+            <h4 class="alert-heading">@ViewBag.Verification</h4>
+            <hr>
+            <p class="mb-0">Make shure the entered e-mail adress is correct.</p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+    <div class="d-flex justify-content-center">
+        <div id="form-container" class="pt-3 pb-3 rounded shadow-lg">
+            <div>
+                <h2 class="text-center text-white">Create an Account</h2>
+            </div>
+            <div class="d-flex justify-content-center">
+                @using (Html.BeginForm("Signup", "Account", FormMethod.Post, new { id = "form", novalidate = "", @class = "w-75" }))
+                {
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control input pass" name="Email" value="@(Model.Email ?? "")" placeholder="e-mail adress" pattern="[a-zA-Z0-9._%+-]+@("@")[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                        <div class="invalid-feedback">
+                            Invalid e-mail adress.
+                        </div>
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Email)
+                    <div class="input-group mt-3 mb-2">
+                        <input type="password" class="form-control input pass" name="Password" value="" placeholder="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9])\S{8,16}$" required>
+                        <div class="invalid-feedback">
+                            Invalid password.
+                        </div>
+                        <small class="text-secondary w-100 mt-2">
+                            Password must consist of:<br />
+                            1. Lowercase letter(s) [a-z]<br />
+                            2. Uppercase letter(s) [A-Z]<br />
+                            3. Special symbol(s) (? = . *)<br />
+                            4. Digit(s) [0-9]<br />
+                            5. At least 8 symbols and no longer than 16
+                        </small>
+                    </div>
+                    <div class="input-group mt-3 mb-2">
+                        <input type="password" class="form-control input pass" name="ConfirmPassword" value="" placeholder="password confirmation" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9])\S{8,16}$" required>
+                        <div class="invalid-feedback">
+                            Invalid password.
+                        </div>
+                    </div>
+                    @Html.ValidationMessageFor(model => model.ConfirmPassword)
+                    @Html.ValidationSummary(true)
+                    <div class="d-flex justify-content-center mt-5 mb-3">
+                        <button class="border border-white text-white w-75 rounded input inputButton" type="submit">Sign up</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿@model LoginViewModel
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="~/css/MyCSS/Login.css" rel="stylesheet" />
+</head>
+<body class="bg-dark">
+    <div class="d-flex justify-content-center">
+        <div id="form-container" class="pt-3 pb-3 rounded shadow-lg">
+            <div class="d-flex justify-content-center">
+                <div id="img-container" class="mb-3">
+                    <img src="https://www.pngkey.com/png/full/138-1388270_transparent-user-png-icon.png" class="w-100" alt="Logo">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { id = "form", novalidate = "", @class = "w-75" }))
+                {
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span id="user-img" class="input-group-text back-img"></span>
+                        </div>
+                        <input type="text" class="form-control" name="Email" value="@(Model.Email ?? "")" placeholder="e-mail adress" pattern="[a-zA-Z0-9._%+-]+@("@")[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                        <div class="invalid-feedback">
+                            Invalid e-mail adress.
+                        </div>
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-append">
+                            <span id="pass-img" class="input-group-text back-img"></span>
+                        </div>
+                        <input type="password" class="form-control" name="Password" value="" placeholder="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9])\S{8,16}$" required>
+                        <div class="invalid-feedback">
+                            Invalid password.
+                        </div>
+                    </div>
+                    @Html.ValidationSummary(true)
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input id="remember-me" type="checkbox" class="custom-control-input" name="RememberMe" value=true>
+                            <input type="hidden" name="RememberMe" value=false />
+                            <label class="custom-control-label text-white" for="remember-me">Remember me</label>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button class="btn btn-info border border-white w-50" type="submit">Login</button>
+                    </div>
+                    <input type="hidden" name="ReturnUrl" value="@(Model.ReturnUrl)" />
+                }
+            </div>
+            <div class="mt-4">
+                <div class="d-flex justify-content-center text-white">
+                    Don't have an account? <a href="~/Account/Signup" class="ml-2 text-info">Sign Up</a>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a class="text-info" href="~/Account/ForgotPassword">Forgot your password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿@model List<BicycleShopDB.Tables.User>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="~/css/MyCSS/Panel.css" rel="stylesheet" />
+    <link href="~/css/MyCSS/Delete.css" rel="stylesheet" />
+</head>
+<body class="bg-dark">
+    <div>
+        <div>
+            <a class="d-flex justify-content-center text-white mb-3" asp-action="CreateUser" asp-controller="Admin">
+                <img id="create-img" src="https://icons-for-free.com/iconfiles/png/512/append+circle+create+green+new+plus+icon-1320196710849480257.png" alt="" />
+                <h3 class="ml-5 mt-1">Add new user</h3>
+            </a>
+        </div>
+        <table id="panel-tabel" class="table text-white">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Order quantity</th>
+                    <th>Total value of all purchases</th>
+                    <th>Purchased bicycles - and its quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                <tr>
+                    <td>@user.UserName</td>
+                    <td>@user.Email</td>
+                    <td>@user.UserRoles.First().Role.Name</td>
+                    <td>@user.Orders.Count</td>
+                    <td>@user.Orders.Sum(x => x.Price)</td>
+                    <td>
+                        @foreach (var order in user.Orders)
+                        {
+                            <div>@(order.Bicycle.BicycleName) - @order.ItemsQuantity</div>
+                        }
+                    </td>
+                    <td>
+                        <form asp-action="CreateUser" asp-controller="Admin" method="get">
+                            <input type="hidden" value="@user.Id" name="id" />
+                            <input id="update" class="btn icon-crud" type="submit" value="" />
+                        </form>
+                    </td>
+                    <td>
+                        @if (user.Email != User.Identity.Name)
+                        {
+                            <form asp-action="DeleteUser" asp-controller="Admin" method="post">
+                                <input type="hidden" value="@user.Id" name="id" />
+                                <input id="delete" class="btn icon-crud" type="submit" value="" />
+                            </form>
+                        }
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

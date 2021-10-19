@@ -1,0 +1,47 @@
+#container {
+    position: absolute;
+    top: calc(50% - 230px);
+    left: calc(50% - 325px)
+}
+
+.some {
+    display: inline;
+    position: absolute;
+    width: 150px;
+}
+
+#error {
+    color: brown;
+    left: 200px;
+    width: 100px;
+}
+
+#formatted {
+    left: 350px;
+}
+
+.text {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+}
+
+#input {
+    position: absolute;
+    top: 30px
+}
+
+#output {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    margin-left: 50px;
+}
+
+#formate {
+    position: absolute;
+    left: 300px;
+    height: 406px;
+    width: 50px;
+    top: 30px;
+}

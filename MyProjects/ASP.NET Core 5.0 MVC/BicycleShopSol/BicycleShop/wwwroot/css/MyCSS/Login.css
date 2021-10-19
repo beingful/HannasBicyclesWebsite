@@ -1,0 +1,21 @@
+﻿#form-container {
+    width:350px
+}
+
+#img-container {
+    width: 200px
+}
+
+#user-img {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/flatastic-4-1/256/user_blue-512.png)
+}
+
+#pass-img {
+    background-image: url(https://dent-ist.ru/wp-content/themes/betheme/images/payment-method/key.png)
+}
+
+.back-img {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center
+}

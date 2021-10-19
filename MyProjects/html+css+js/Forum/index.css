@@ -1,0 +1,80 @@
+body {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://svit-ok.com/wp-content/uploads/2015/02/Zapechatat-konvert-pechatkoj-pod-starinu.jpg");
+    background-size: 100%;
+}
+
+#container {
+    top:0;
+    background: rgba(255, 255, 255, 0.5);
+    width: 50vw;
+    height: 43vh;
+    position: absolute;
+    left: 25vw;
+}
+
+
+.comment {
+    border: 1px solid black;
+    margin: 2% 0 0 2%;
+    width: 96%;
+    height: auto;
+}
+
+.name {
+    text-align: left;
+    width: 50%;
+}
+
+.date {
+    text-align: right;
+    width: 50%;
+}
+
+.data {
+    border-bottom: 1px dotted black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#add {
+    text-align: center;
+    font-weight: bold;
+}
+
+.label {
+    font-weight: bold;
+    width: 17%;
+    vertical-align: bottom;
+}
+
+.fill {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+
+#send {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.field {
+    width: 81%;
+}
+
+.text {
+    padding: 1%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#addNew {
+    width: 96%;
+    position: absolute;
+    padding: 2% 2% 2% 2%;
+}

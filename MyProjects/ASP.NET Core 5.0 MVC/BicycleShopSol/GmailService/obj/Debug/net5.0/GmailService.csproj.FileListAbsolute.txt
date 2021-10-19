@@ -1,0 +1,12 @@
+D:\C#Projects\BicycleShopSol\GmailService\bin\Debug\net5.0\GmailService.deps.json
+D:\C#Projects\BicycleShopSol\GmailService\bin\Debug\net5.0\GmailService.dll
+D:\C#Projects\BicycleShopSol\GmailService\bin\Debug\net5.0\ref\GmailService.dll
+D:\C#Projects\BicycleShopSol\GmailService\bin\Debug\net5.0\GmailService.pdb
+D:\C#Projects\BicycleShopSol\GmailService\obj\Debug\net5.0\GmailService.csproj.AssemblyReference.cache
+D:\C#Projects\BicycleShopSol\GmailService\obj\Debug\net5.0\GmailService.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#Projects\BicycleShopSol\GmailService\obj\Debug\net5.0\GmailService.AssemblyInfoInputs.cache
+D:\C#Projects\BicycleShopSol\GmailService\obj\Debug\net5.0\GmailService.AssemblyInfo.cs
+D:\C#Projects\BicycleShopSol\GmailService\obj\Debug\net5.0\GmailService.csproj.CoreCompileInputs.cache
+D:\C#Projects\BicycleShopSol\GmailService\obj\Debug\net5.0\GmailService.dll
+D:\C#Projects\BicycleShopSol\GmailService\obj\Debug\net5.0\ref\GmailService.dll
+D:\C#Projects\BicycleShopSol\GmailService\obj\Debug\net5.0\GmailService.pdb

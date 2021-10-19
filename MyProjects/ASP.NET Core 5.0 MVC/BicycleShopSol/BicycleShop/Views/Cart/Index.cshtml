@@ -1,0 +1,69 @@
+﻿@model CartIndexViewModel
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="~/css/MyCSS/Delete.css" rel="stylesheet" />
+</head>
+<body class="bg-dark">
+    @if (Model.Cart.Lines.ToList().Count == 0)
+    {
+        <div class="text-center">
+            <img class="w-25" src="https://www.crazendemand.com/assets/image/shopping_cart.png" />
+            <p>
+                <a href="@Model.ReturnUrl" class="w-50 btn btn-dark border border-white">Continue shopping</a>
+            </p>
+        </div>
+    }
+    else
+    {
+        <h1 class="text-white">Shopping cart</h1>
+        <table class="table text-white">
+            <thead>
+                <tr>
+                    <th>Quantity</th>
+                    <th>Title</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var line in Model.Cart.Lines)
+                {
+                    <tr>
+                        <td>@line.Quantity</td>
+                        <td>
+                            @Html.ActionLink(line.Bicycle.BicycleName, "Details", "Home", new { id = line.Bicycle.BicycleId }, new { @class = "text-white card-title" })
+                        </td>
+                        <td>@line.Bicycle.Brand</td>
+                        <td>@line.Bicycle.Total</td>
+                        <td>@(line.Quantity * line.Bicycle.Total) UAH</td>
+                        <td>
+                            @using (Html.BeginForm("DeleteFromCart", "Cart"))
+                            {
+                                <input type="hidden" name="id" value="@line.Bicycle.BicycleId" />
+                                <input type="hidden" name="quantity" value="@line.Quantity" />
+                                <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+                                <input id="delete" type="submit" class="btn rounded icon-crud" value="" />
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total: </td>
+                    <td>@Model.Cart.ComputeTotalValue()</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="row justify-content-center">
+            <a href="@Model.ReturnUrl" class="col-2 btn btn-info mr-5 border border-white">Continue shopping</a>
+            @Html.RouteLink("Buy", new { Action = "Buy", Controller = "Shopping" }, new { @class = "col-2 btn btn-dark ml-5 border border-white" })
+        </div>
+    }
+</body>
+</html>
+

@@ -1,0 +1,89 @@
+﻿@using Microsoft.AspNetCore.Http;
+@using BicycleShop.Extensions
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    string userIcon = "https://icon-library.com/images/material-design-user-icon/material-design-user-icon-5.jpg";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BicycleShop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/MyCSS/Validation.css" />
+</head>
+<body>
+    <header class="mb-4 text-white rounded bg-dark border border-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-md-between">
+                <h1 class="">Hanna@("'")s Shop</h1>
+                <form class="align-items-center" action="@Url.Content("~/Cart/Index")" style="height:42px;width:50px">
+                    <input type="hidden" value=@Context.Request.CurrentUrl() name="returnUrl" />
+                    <input class="btn btn-dark w-100 h-100" type="submit" value=""
+                           style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Shopping_cart_icon.svg/293px-Shopping_cart_icon.svg.png); background-size: 100%;background-repeat:no-repeat " />
+                </form>
+                <div class="d-flex justify-content-between" style="width:400px">
+                    <input type="search" class="form-control form-control-dark" value="@(ViewBag.Search ?? "")" placeholder="Search..." aria-label="Search">
+                    <button id="search-btn" class="btn btn-outline-warning ml-1" data-type="search">Find</button>
+                </div>
+                <ul class="nav col-12 col-lg-auto justify-content-center">
+                    <li><a class="nav-link px-2 text-white" asp-area="" asp-controller="Home" asp-action="Index">Main</a></li>
+                    <li><a class="nav-link px-2 text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+                </ul>
+                @if (HttpContextAccessor.HttpContext.Session.Keys.Contains("user"))
+                {
+                    @if (HttpContextAccessor.HttpContext.Session.GetString("role") == "admin")
+                    {
+                        userIcon = "https://cdn-icons-png.flaticon.com/512/270/270023.png";
+                    }
+                    <div class="dropleft">
+                        <a class="dropdown-toggle" href="#" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                                style="height: 40px; width: 45px;background-image: url(@userIcon); background-size: 100%; background-position: center; background-repeat: no-repeat ">
+                        </a>
+                        <div class="dropdown-menu">
+                            @if (HttpContextAccessor.HttpContext.Session.GetString("role") == "admin")
+                            {
+                            <a asp-action="BicyclePanel" asp-controller="Admin" class="dropdown-item text-dark">Bicycles Panel</a>
+                            <a asp-action="UserPanel" asp-controller="Admin" class="dropdown-item text-dark">Users Panel</a>
+                            <div class="dropdown-divider"></div>
+                            }
+                            <form asp-action="Login" asp-controller="Account" class="float-left">
+                                <input type="hidden" name="returnUrl" value="/Home/Index" />
+                                <input type="submit" class="dropdown-item" value="Change Account" />
+                            </form>
+                            <form asp-action="Logout" asp-controller="Account" method="post" asp-antiforgery="true">
+                                <input type="submit" class="dropdown-item mw-100" value="Log out" />
+                            </form>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div>
+                        @Html.ActionLink("Log in", "Login", "Account", new { returnUrl = @Context.Request.CurrentUrl() }, new { @class = "btn btn-outline-light" })
+                        @Html.ActionLink("Sign up", "Signup", "Account", null, new { @class = "btn btn-warning" })
+                    </div>
+                }
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-white bg-dark">
+        <div class="container">
+            &copy; 2021 - Hanna's Shop - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/MyJS/FormValidated.js" type="text/javascript"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

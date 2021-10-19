@@ -1,0 +1,60 @@
+D:\C#Projects\BicycleShopSol\CarShopDB\bin\Debug\net5.0\BicycleShopDB.deps.json
+D:\C#Projects\BicycleShopSol\CarShopDB\bin\Debug\net5.0\BicycleShopDB.runtimeconfig.json
+D:\C#Projects\BicycleShopSol\CarShopDB\bin\Debug\net5.0\BicycleShopDB.runtimeconfig.dev.json
+D:\C#Projects\BicycleShopSol\CarShopDB\bin\Debug\net5.0\BicycleShopDB.dll
+D:\C#Projects\BicycleShopSol\CarShopDB\bin\Debug\net5.0\ref\BicycleShopDB.dll
+D:\C#Projects\BicycleShopSol\CarShopDB\bin\Debug\net5.0\BicycleShopDB.pdb
+D:\C#Projects\BicycleShopSol\CarShopDB\obj\Debug\net5.0\BicycleShopDB.csproj.AssemblyReference.cache
+D:\C#Projects\BicycleShopSol\CarShopDB\obj\Debug\net5.0\BicycleShopDB.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#Projects\BicycleShopSol\CarShopDB\obj\Debug\net5.0\BicycleShopDB.AssemblyInfoInputs.cache
+D:\C#Projects\BicycleShopSol\CarShopDB\obj\Debug\net5.0\BicycleShopDB.AssemblyInfo.cs
+D:\C#Projects\BicycleShopSol\CarShopDB\obj\Debug\net5.0\BicycleShopDB.csproj.CoreCompileInputs.cache
+D:\C#Projects\BicycleShopSol\CarShopDB\obj\Debug\net5.0\BicycleShopDB.dll
+D:\C#Projects\BicycleShopSol\CarShopDB\obj\Debug\net5.0\ref\BicycleShopDB.dll
+D:\C#Projects\BicycleShopSol\CarShopDB\obj\Debug\net5.0\BicycleShopDB.pdb
+D:\C#Projects\BicycleShopSol\CarShopDB\obj\Debug\net5.0\BicycleShopDB.genruntimeconfig.cache
+D:\C#Projects\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.csproj.AssemblyReference.cache
+D:\C#Projects\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#Projects\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.AssemblyInfoInputs.cache
+D:\C#Projects\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.AssemblyInfo.cs
+D:\C#Projects\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.csproj.CoreCompileInputs.cache
+D:\C#Projects\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.dll
+D:\C#Projects\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\ref\BicycleShopDB.dll
+D:\C#Projects\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.pdb
+D:\C#Projects\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.deps.json
+D:\C#Projects\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.runtimeconfig.json
+D:\C#Projects\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.runtimeconfig.dev.json
+D:\C#Projects\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.dll
+D:\C#Projects\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\ref\BicycleShopDB.dll
+D:\C#Projects\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.pdb
+D:\C#Projects\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.genruntimeconfig.cache
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.deps.json
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.runtimeconfig.json
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.runtimeconfig.dev.json
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.dll
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\ref\BicycleShopDB.dll
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.pdb
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.csproj.AssemblyReference.cache
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.AssemblyInfoInputs.cache
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.AssemblyInfo.cs
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.dll
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\ref\BicycleShopDB.dll
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.pdb
+C:\Users\1\Documents\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.genruntimeconfig.cache
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.deps.json
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.runtimeconfig.json
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.runtimeconfig.dev.json
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.dll
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\ref\BicycleShopDB.dll
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\bin\Debug\net5.0\BicycleShopDB.pdb
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.csproj.AssemblyReference.cache
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.AssemblyInfoInputs.cache
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.AssemblyInfo.cs
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.dll
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\ref\BicycleShopDB.dll
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.pdb
+C:\Users\1\Desktop\MyProjects\ASP.NET Core 5.0 MVC\BicycleShopSol\BicycleShopDB\obj\Debug\net5.0\BicycleShopDB.genruntimeconfig.cache

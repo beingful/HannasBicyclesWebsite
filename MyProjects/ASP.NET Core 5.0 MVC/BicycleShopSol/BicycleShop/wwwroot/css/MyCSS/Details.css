@@ -1,0 +1,9 @@
+﻿.carousel-control-next,
+.carousel-control-prev, .carousel-indicators {
+    filter: invert(100%);
+}
+
+.fixed-size {
+    height: 430px;
+    width: 540px
+}
