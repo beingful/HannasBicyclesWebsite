@@ -22,7 +22,7 @@
     </p>
   </li>
   <li>
-    <h3>Good information with slideshow component.</h3>
+    <h3>Shopping cart page, Purchasing.</h3>
     <p>
       <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/9.png" width="24.75%" />
       <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/11.png" width="24.75%" />
@@ -31,18 +31,13 @@
     </p>
   </li>
   <li>
-    <h3>Shopping cart page, Purchasing.</h3>
+    <h3>Good information with slideshow component.</h3>
     <p>
       <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/7.png" width="49.5%" />
       <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/10.png" width="49.5%"/>
     </p>
   </li>
   <li>
-    <h3>How does it work.</h3>
-    <p>
-      <video width="500px" align="center" controls>
-        <source src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/HowItWorks.mp4" type="video/mp4">
-      </video>
-    </p>
+    <a href="https://www.w3schools.com">How does it work.</a>
   </li>
 </ul>
