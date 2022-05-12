@@ -24,17 +24,17 @@
   <li>
     <h3>Good information with slideshow component.</h3>
     <p>
-      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/9.png" width="25%" />
-      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/11.png" width="25%"/>
-      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/12.png" width="25%"/>
-      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/13.png" width="25%"/>
+      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/9.png" width="24.9%" />
+      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/11.png" width="24.9%"/>
+      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/12.png" width="24.9%"/>
+      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/13.png" width="24.9%"/>
     </p>
   </li>
   <li>
     <h3>Shopping cart page, Purchasing.</h3>
     <p>
-      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/7.png" width="50%" />
-      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/10.png" width="50%"/>
+      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/7.png" width="49.9%" />
+      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/10.png" width="49.9%"/>
     </p>
   </li>
   <li>
