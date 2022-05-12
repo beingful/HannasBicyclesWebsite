@@ -1,4 +1,4 @@
-<h1>
+<h1 align="center">
   Bicycle Shop Site
 </h1>
 <p>
