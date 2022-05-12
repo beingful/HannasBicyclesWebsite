@@ -24,10 +24,10 @@
   <li>
     <h3>Good information with slideshow component.</h3>
     <p>
-      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/9.png" width="24.9%" />
-      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/11.png" width="24.9%"/>
-      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/12.png" width="24.9%"/>
-      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/13.png" width="24.9%"/>
+      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/9.png" width="24%" />
+      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/11.png" width="24%"/>
+      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/12.png" width="24%"/>
+      <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/13.png" width="24%"/>
     </p>
   </li>
   <li>
