@@ -37,7 +37,4 @@
       <img src="https://github.com/NotGasaiYuno/my-programming-projects/blob/main/Attachments/10.png" width="49.5%"/>
     </p>
   </li>
-  <li>
-    <a href="https://www.w3schools.com">How does it work.</a>
-  </li>
 </ul>
