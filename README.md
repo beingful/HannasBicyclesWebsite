@@ -1,5 +1,5 @@
 <h1 align="center">
-  Bicycle Shop Site
+  Bicycle Shop Site using ASP.NET Core 5.0 MVC
 </h1>
 <ul>
   <li>
